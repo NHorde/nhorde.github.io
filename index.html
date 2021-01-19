@@ -31,7 +31,27 @@ The solution of my algorithm uses the [Tarjan algorithm](https://en.wikipedia.or
 To my surprise, the algorithm I developed [back then](https://github.com/NHorde/ensam-maze-shortest-path-algorithm/tree/v1-2015)  still works in 2021, more than five years later (!!) and I am now working on a more [optimized code](https://github.com/NHorde/ensam-maze-shortest-path-algorithm).
 
 
-Sto
+Stock Webscrapping
+===
+
+Hypothesis
+---
+
+Although being a fan of [passive investing](https://www.investopedia.com/terms/p/passiveinvesting.asp), I still have a small fraction of my portfolio allocated in stocks I am personally picking. One old strategy is called [value investing](https://en.wikipedia.org/wiki/Value_investing) and has been used by some successful persons with great returns, the most famous one being Warren Buffett.
+
+The idea is to buy shares of a company that are trading below their book price (ie their tangible assets) as the difference between book value and stock value is simply free money.
+
+Webscrapping
+---
+
+I am using [Yahoo Finance](https://finance.yahoo.com/) for my [webscrapper](https://github.com/NHorde/finance-stock-scrapper) using [BeautifulSoup](https://www.google.com/search?q=beautifulsoup&oq=beautifulsoup&aqs=chrome..69i57j0l7.1619j0j7&sourceid=chrome&ie=UTF-8). Iterating through all stocks trading on the NASDAQ and NYSE, we are only interesting in scrapping the current share price, book value and cash value.
+
+Results
+---
+To my surprise, a lot of biotech companies are trading under their cash value, I believe it's because those companies are burning so much cash for few revenue that the market considers them as "too risky". There's also a few companies that are trading below their book value, in general those companies are losing money every quarter and their prospects are far from ideal.
+
+This scrapper is *not* designed to be an automated tool to buy/sell stocks but rather to quickly identify a list of potential stocks that are worth analyzing.
+
 
 <!-- Markdeep: -->
 <style class="fallback">body{visibility:hidden;white-space:pre;font-family:monospace}</style>
