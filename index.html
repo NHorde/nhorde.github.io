@@ -4,7 +4,7 @@
                     [github.com/NHorde](https://github.com/NHorde)
                     [Curriculum Vitae](cv/cv.md.html)
 
-[Lichess Analysis](https://github.com/NHorde/lichess-nhorde-analysis)
+Lichess Analysis
 ===
 
 I learned chess when I was 8 and started playing regularly after I graduated from college. Being a huge fan of [Lichess](https://lichess.org/@/NHorde) which is completely open-source and free, I decided to spend more time analyzing my games to improve my weaknesses. This [project](https://github.com/NHorde/lichess-nhorde-analysis) is based on the free [Lichess API](https://lichess.org/api). 
@@ -14,8 +14,14 @@ At a high level, I am parsing all my games from a json format to .csv and then r
 Maze Shortest Path
 ===
 
-This project 
-https://github.com/NHorde/ensam-maze-shortest-path-algorithm
+This [project](https://github.com/NHorde/ensam-maze-shortest-path-algorithm) was my first Python script that I developed during my first year in College back in 2014. 
+
+The objective is giving a random aze, how to find the shortest path to the arrival? One can think to try all different solutions, count the number of iterations and select the one with the lowest number. However, this solution will require n*n iterations (n being the length of the maze). Another idea wight be to always "turn left" which will inevitably lead to the arrival but it's defintely not the fastest way to reach it.
+
+The solution of my algorithm uses the [Tarjan algorithm](https://en.wikipedia.org/wiki/Tarjan%27s_strongly_connected_components_algorithm) where we allocate 1 to the first cell (departure), iterate each neighbor cells with 1 and iterate through reaching arrival. The shortest path is then retrieve by selecting the lowest cell neighboor cell value from the arrival and iterate back to the departure.
+
+To my surprise, the algorithm I developed back then still works in 2021, almost seven years later (!!) and I am now working on a more optimized code.
+
 
 
 <!-- Markdeep: -->
