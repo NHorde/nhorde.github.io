@@ -14,13 +14,21 @@ At a high level, I am parsing all my games from a json format to .csv and then r
 Maze Shortest Path
 ===
 
+Ideas
+---
+
 This [project](https://github.com/NHorde/ensam-maze-shortest-path-algorithm) was my first Python script that I developed during my first year in College back in 2014. 
 
-The objective is giving a random aze, how to find the shortest path to the arrival? One can think to try all different solutions, count the number of iterations and select the one with the lowest number. However, this solution will require n*n iterations (n being the length of the maze). Another idea wight be to always "turn left" which will inevitably lead to the arrival but it's defintely not the fastest way to reach it.
+The objective is giving a random maze, how to find the shortest path to the arrival? One can think to try all different solutions, count the number of iterations and select the one with the lowest number. However, this solution will require n*n iterations (n being the length of the maze). Another idea wight be to always "turn left" which will inevitably lead to the arrival but it's definitely not the fastest way to solve the problem.
+
+Tarjan's Algorithm
+---
 
 The solution of my algorithm uses the [Tarjan algorithm](https://en.wikipedia.org/wiki/Tarjan%27s_strongly_connected_components_algorithm) where we allocate 1 to the first cell (departure), iterate each neighbor cells with 1 and iterate through reaching arrival. The shortest path is then retrieve by selecting the lowest cell neighboor cell value from the arrival and iterate back to the departure.
 
-To my surprise, the algorithm I developed back then still works in 2021, almost seven years later (!!) and I am now working on a more optimized code.
+![ "X" represents an obstacle, "D" departure and "A" arrival](img/ensam_maze_1.png) ![Every neighboor that is not an obstacle is incremented](img/ensam_maze_2.png) ![Then the algorithm walks through the maze again backwards](img/ensam_maze_3.png)
+
+To my surprise, the algorithm I developed [back then](https://github.com/NHorde/ensam-maze-shortest-path-algorithm/tree/v1-2015)  still works in 2021, more than five years later (!!) and I am now working on a more [optimized code](https://github.com/NHorde/ensam-maze-shortest-path-algorithm).
 
 
 
